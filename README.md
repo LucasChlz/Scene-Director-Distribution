@@ -1,6 +1,6 @@
 # Scene Director — Free Distribution
 
-Public distribution repository for **Scene Director**, a Foundry VTT module that shows cinematic screens to every player when combat starts and ends.
+Public distribution repository for **Scene Director**, a Foundry VTT module that plays cinematic screens for every player at once: when combat starts, when it ends and when a session opens.
 
 ![A Rebel start screen: ransom-note title, the enemy leader and the number of foes](media/screen-rebel-encounter-start.png)
 
@@ -21,9 +21,11 @@ Release assets contain only the Foundry runtime (`scripts`, `styles`, `lang`, `f
 - Encounter start and end screens in two art styles, **Rebel** and **Chronicle**, shown to the whole table at the same time.
 - The combat fills them in: enemy leader, party members, names, enemy count and rounds. Hidden combatants never show; actors with no art get the style's silhouette.
 - **Cast:** right-click a combatant to make it the leader, or open the Cast window to order the party and leave someone out.
+- **Session openings:** click **Open session**, write the session number, the chapter and what happened last time, and an opening screen plays for everyone with the party.
+- **Studio:** open any scene from the brush icon in the library, then move, stretch, turn and slant its layers on the stage, with snapping guides. Double click a title to rewrite it in place. Hide, lock, rename and reorder layers, undo and redo, zoom and preview in the same window.
 - Every color of every style is editable, with saved palettes, a default palette per style and a contrast warning.
-- Editable texts (`{leader}`, `{enemies}`, `{roundsRoman}`…), fixed images for any slot, and a sound per scene.
-- A GM window that dresses in the style of the scene being edited, with a live preview.
+- Editable texts (`{leader}`, `{enemies}`, `{roundsRoman}`…), fixed images for any slot, and a sound per scene. Images and sounds can be uploaded straight from your computer (button, drop or paste).
+- A GM window that dresses in the style of the scene being edited, with a live preview you can zoom into (Ctrl + mouse wheel).
 - Plays automatically when combat starts and ends, or on demand, from key bindings or the API.
 - Screens last 2 to 4 seconds and can be skipped; each player can turn off flashes and camera shake.
 - English and Brazilian Portuguese. Public API for new art styles, text treatments and kinds of screens.
@@ -34,10 +36,18 @@ Release assets contain only the Foundry runtime (`scripts`, `styles`, `lang`, `f
 
 ![The two start screens playing](media/clip-start-screens.gif)
 
+![The Open session dialog: session number, chapter, title, recap and party](media/dialog-open-session.png)
+
+![A Rebel session opening with the chapter, the recap and the party](media/screen-rebel-session-opening.png)
+
+![The Studio: a layer selected on the stage with its handles, the layer list and its settings](media/window-studio.png)
+
+![Moving, stretching, turning and rewriting a title in the Studio](media/clip-studio.gif)
+
 ## Editions
 
 - **Free:** the public package published here, complete on its own.
-- **Patreon:** a separate companion module in development, which uses the Free module as its required base.
+- **Patreon:** a separate companion module for Patreon members that uses the Free module as its required base. It adds three more art styles, boss entrances, interactive maps and title cards, scenes with several cards, and Studio tools to add layers, bend shapes with curves, animate on a timeline and save templates. It is not distributed here.
 
 Issues for the distributed module can be reported in this repository.
 
